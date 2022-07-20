@@ -121,7 +121,7 @@ An Abstract Factory Pattern is also known as Kit.
 - Then after we will create concrete classes, BankFactory, and LoanFactory that will extends AbstractFactory class
 - After that, AbstractFactoryPatternExample class uses the FactoryCreator to get an object of AbstractFactory class.
 
-![](images/factory_plan.png)
+![](images/2.png)
 </details>
 
 ------------
