@@ -6,7 +6,8 @@
 A design patterns are well-proved solution for solving the specific problem/task.
 
 ------------
-
+<details>
+  <summary>Click to expand!</summary>
 **Problem Given:**
 Suppose you want to create a class for which only a single instance (or object) should be created and that single object can be used by all other classes.
 
@@ -56,14 +57,20 @@ Design patterns ease the analysis and requirement phase of SDLC by providing inf
 10. Template Pattern
 11. Visitor Pattern
 
+</details>
 
-[========]
+---------------
+
 ## Creational design patterns
 Creational Design Patterns Are Concerned With The Way Of Creating Objects. These Design Patterns Are Used When A Decision Must Be Made At The Time Of Instantiation Of A Class (I.E. Creating An Object Of A Class).
 
-[========]
+
+---------------
 
 #### 1. Factory Method Pattern
+<details>
+  <summary>Click to expand!</summary>
+
 A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. In other words, subclasses are responsible to create the instance of the class.
 
 The Factory Method Pattern is also known as Virtual Constructor.
@@ -83,3 +90,6 @@ The Factory Method Pattern is also known as Virtual Constructor.
 - GenerateBill class will use GetPlanFactory to get a Plan object. It will pass information (DOMESTICPLAN / COMMERCIALPLAN / INSTITUTIONALPLAN) to GetPalnFactory to get the type of object it needs.
 
 ![](images/factory_plan.png)
+  
+ </details>
+
