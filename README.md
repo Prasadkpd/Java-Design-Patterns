@@ -82,4 +82,4 @@ The Factory Method Pattern is also known as Virtual Constructor.
 - We are going to create a Plan abstract class and concrete classes that extends the Plan abstract class. A factory class GetPlanFactory is defined as a next step.
 - GenerateBill class will use GetPlanFactory to get a Plan object. It will pass information (DOMESTICPLAN / COMMERCIALPLAN / INSTITUTIONALPLAN) to GetPalnFactory to get the type of object it needs.
 
-
+![](images/factory_plan.png)
