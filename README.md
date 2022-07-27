@@ -6,7 +6,8 @@
 A design patterns are well-proved solution for solving the specific problem/task.
 
 ------------
-
+<details>
+  <summary>Click to expand!</summary>
 **Problem Given:**
 Suppose you want to create a class for which only a single instance (or object) should be created and that single object can be used by all other classes.
 
@@ -56,14 +57,20 @@ Design patterns ease the analysis and requirement phase of SDLC by providing inf
 10. Template Pattern
 11. Visitor Pattern
 
+</details>
 
-[========]
+---------------
+
 ## Creational design patterns
 Creational Design Patterns Are Concerned With The Way Of Creating Objects. These Design Patterns Are Used When A Decision Must Be Made At The Time Of Instantiation Of A Class (I.E. Creating An Object Of A Class).
 
-[========]
+
+---------------
 
 #### 1. Factory Method Pattern
+<details>
+  <summary>Click to expand!</summary>
+
 A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. In other words, subclasses are responsible to create the instance of the class.
 
 The Factory Method Pattern is also known as Virtual Constructor.
@@ -81,5 +88,42 @@ The Factory Method Pattern is also known as Virtual Constructor.
 **UML for Factory Method Pattern**
 - We are going to create a Plan abstract class and concrete classes that extends the Plan abstract class. A factory class GetPlanFactory is defined as a next step.
 - GenerateBill class will use GetPlanFactory to get a Plan object. It will pass information (DOMESTICPLAN / COMMERCIALPLAN / INSTITUTIONALPLAN) to GetPalnFactory to get the type of object it needs.
+
+![](images/factory_plan.png)
+  
+ </details>
+ 
+------------
+
+#### 2.Abstract Factory Pattern
+
+<details>
+  <summary>Click to expand!</summary>
+  Abstract Factory Pattern says that just define an interface or abstract class for creating families of related (or dependent) objects but without specifying their concrete sub-classes.That means Abstract Factory lets a class returns a factory of classes. So, this is the reason that Abstract Factory Pattern is one level higher than the Factory Pattern.
+
+An Abstract Factory Pattern is also known as Kit.
+
+**Advantage of Abstract Factory Pattern**
+- Abstract Factory Pattern isolates the client code from concrete (implementation) classes.
+- It eases the exchanging of object families.
+- It promotes consistency among objects.
+
+**Usage of Abstract Factory Pattern
+**
+- When the system needs to be independent of how its object are created, composed, and represented.
+- When the family of related objects has to be used together, then this constraint needs to be enforced.
+- When you want to provide a library of objects that does not show implementations and only reveals interfaces.
+- When the system needs to be configured with one of a multiple family of objects.
+
+**UML for Abstract Factory Pattern**
+- We are going to create a Bank interface and a Loan abstract class as well as their sub-classes.
+- Then we will create AbstractFactory class as next step.
+- Then after we will create concrete classes, BankFactory, and LoanFactory that will extends AbstractFactory class
+- After that, AbstractFactoryPatternExample class uses the FactoryCreator to get an object of AbstractFactory class.
+
+![](images/2.png)
+</details>
+
+------------
 
 
