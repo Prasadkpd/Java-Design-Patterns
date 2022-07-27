@@ -1,8 +1,8 @@
-public class SBI implements Bank {
-    private final String BNAME;
+public class SBI implements Bank{
 
-    public SBI(String BNAME) {
-        this.BNAME = BNAME;
+    private final String BNAME;
+    public SBI() {
+        BNAME="SBI BANK";
     }
 
     @Override
